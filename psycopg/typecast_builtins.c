@@ -12,6 +12,7 @@ static long int typecast_DATE_types[] = {1082, 0};
 static long int typecast_INTERVAL_types[] = {704, 1186, 0};
 static long int typecast_BINARY_types[] = {17, 0};
 static long int typecast_ROWID_types[] = {26, 0};
+static long int typecast_INET_types[] = {869, 0};
 static long int typecast_LONGINTEGERARRAY_types[] = {1016, 0};
 static long int typecast_INTEGERARRAY_types[] = {1005, 1006, 1007, 0};
 static long int typecast_FLOATARRAY_types[] = {1017, 1021, 1022, 0};
@@ -25,6 +26,7 @@ static long int typecast_DATEARRAY_types[] = {1182, 0};
 static long int typecast_INTERVALARRAY_types[] = {1187, 0};
 static long int typecast_BINARYARRAY_types[] = {1001, 0};
 static long int typecast_ROWIDARRAY_types[] = {1028, 1013, 0};
+static long int typecast_INETARRAY_types[] = {1041, 0};
 static long int typecast_UNKNOWN_types[] = {705, 0};
 
 
@@ -43,6 +45,7 @@ static typecastObject_initlist typecast_builtins[] = {
   {"INTERVAL", typecast_INTERVAL_types, typecast_INTERVAL_cast, NULL},
   {"BINARY", typecast_BINARY_types, typecast_BINARY_cast, NULL},
   {"ROWID", typecast_ROWID_types, typecast_ROWID_cast, NULL},
+  {"INET", typecast_INET_types, typecast_INET_cast, NULL},
   {"LONGINTEGERARRAY", typecast_LONGINTEGERARRAY_types, typecast_LONGINTEGERARRAY_cast, "LONGINTEGER"},
   {"INTEGERARRAY", typecast_INTEGERARRAY_types, typecast_INTEGERARRAY_cast, "INTEGER"},
   {"FLOATARRAY", typecast_FLOATARRAY_types, typecast_FLOATARRAY_cast, "FLOAT"},
@@ -56,7 +59,7 @@ static typecastObject_initlist typecast_builtins[] = {
   {"INTERVALARRAY", typecast_INTERVALARRAY_types, typecast_INTERVALARRAY_cast, "INTERVAL"},
   {"BINARYARRAY", typecast_BINARYARRAY_types, typecast_BINARYARRAY_cast, "BINARY"},
   {"ROWIDARRAY", typecast_ROWIDARRAY_types, typecast_ROWIDARRAY_cast, "ROWID"},
+  {"INETARRAY", typecast_INETARRAY_types, typecast_INETARRAY_cast, "INET"},
   {"UNKNOWN", typecast_UNKNOWN_types, typecast_UNKNOWN_cast, NULL},
     {NULL, NULL, NULL, NULL}
 };
-

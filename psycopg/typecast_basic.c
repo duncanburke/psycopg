@@ -150,3 +150,4 @@ typecast_DECIMAL_cast(const char *s, Py_ssize_t len, PyObject *curs)
 /* some needed aliases */
 #define typecast_NUMBER_cast   typecast_FLOAT_cast
 #define typecast_ROWID_cast    typecast_INTEGER_cast
+#define typecast_INET_cast     typecast_STRING_cast
